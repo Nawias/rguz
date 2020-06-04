@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import NavLink from "../NavLink";
 
 class Footer extends Component {
   render() {
@@ -14,29 +14,31 @@ class Footer extends Component {
           </div>
           <div className="contactInfo">
             <h4>KONTAKT</h4>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur rem iste, nobis eos culpa dicta at, tempora voluptatum
-            quasi, id illum quos cupiditate quae repellendus porro soluta
-            praesentium nostrum vel.
+            <p>
+              <i className="fas fa-map-marker-alt" /> 60-169 Poznań, ul.
+              Gorzelna 17
+            </p>
+            <p>
+              <i className="fas fa-phone" /> Tel. Kom. +48 534 706 964
+            </p>
+            <p>
+              <i className="fas fa-at" /> gt-rguz@solex.tk
+            </p>
+            <p>
+              <i className="fab fa-discord" /> Discord
+            </p>
+            <p>
+              <i className="fas fa-dove" /> Gołąb pocztowy
+            </p>
           </div>
           <div className="footerMenu">
             <h4>MENU</h4>
-            <ul className="footerMenu">
-              <li>
-                <Link to="/">Strona Główna</Link>
-              </li>
-              <li>
-                <Link to="/o-nas">O nas</Link>
-              </li>
-              <li>
-                <Link to="uslugi">Usługi</Link>
-              </li>
-              <li>
-                <Link to="/praca">Praca</Link>
-              </li>
-              <li>
-                <Link to="kontakt">Kontakt</Link>
-              </li>
+            <ul>
+              <NavLink to="/" value="Strona Główna" />
+              <NavLink to="/o-nas" value="O Nas" />
+              <NavLink to="/uslugi" value="Usługi" />
+              <NavLink to="/praca" value="Praca" />
+              <NavLink to="/kontakt" value="Kontakt" />
             </ul>
           </div>
 

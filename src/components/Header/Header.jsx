@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import NavLink from "../NavLink";
 
 class Header extends Component {
   state = { collapsed: false };
@@ -15,6 +15,7 @@ class Header extends Component {
     classes += this.state.collapsed ? "times" : "bars";
     return classes;
   }
+
   render() {
     let itemClasses = this.getItemClasses();
     let iconClasses = this.getIconClasses();
@@ -26,21 +27,11 @@ class Header extends Component {
 
         <nav>
           <ul className="menu">
-            <li className={itemClasses}>
-              <Link to="/">STRONA GŁÓWNA</Link>
-            </li>
-            <li className={itemClasses}>
-              <Link to="/o-nas">O NAS</Link>
-            </li>
-            <li className={itemClasses}>
-              <Link to="uslugi">USŁUGI</Link>
-            </li>
-            <li className={itemClasses}>
-              <Link to="/praca">PRACA</Link>
-            </li>
-            <li className={itemClasses}>
-              <Link to="kontakt">KONTAKT</Link>
-            </li>
+            <NavLink className={itemClasses} to="/" value="STRONA GŁÓWNA" />
+            <NavLink className={itemClasses} to="/o-nas" value="O NAS" />
+            <NavLink className={itemClasses} to="/uslugi" value="USŁUGI" />
+            <NavLink className={itemClasses} to="/praca" value="PRACA" />
+            <NavLink className={itemClasses} to="/kontakt" value="KONTAKT" />
             <li className="toggle">
               <button onClick={this.toggleMenu}>
                 <i className={iconClasses}></i>
