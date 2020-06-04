@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="homeComponent">
         <h1>Homepage</h1> Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Corrupti, facere quis a asperiores ad esse aut minima dolor
         deleniti. Voluptatum sequi dignissimos animi autem, officia modi quos

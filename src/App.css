@@ -6,4 +6,24 @@
 
 .appBody {
   flex-grow: 2;
+  align-self: center;
+  padding: 20px 20px;
+}
+
+@media all and (min-width: 600px) {
+  .appBody {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .appBody {
+    width: 850px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .appBody {
+    width: 1200px;
+  }
 }

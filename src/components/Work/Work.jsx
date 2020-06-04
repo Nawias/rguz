@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class Work extends Component {
   render() {
-    return <h1>Work</h1>;
+    return (
+      <div className="workComponent">
+        <h1>Work</h1>
+      </div>
+    );
   }
 }
 
