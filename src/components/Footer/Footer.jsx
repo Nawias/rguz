@@ -23,13 +23,17 @@ class Footer extends Component {
               +48&nbsp;534&nbsp;706&nbsp;964
             </p>
             <p>
-              <i className="fas fa-at" /> gt-rguz@solex.tk
+              <i className="fas fa-at" /> biuro.rguz@yandex.com
             </p>
             <p>
-              <i className="fab fa-discord" /> Discord
+              <i className="fab fa-discord" />{" "}
+              <a href="https://discord.gg/VEHDYpQ">
+                https://discord.gg/VEHDYpQ
+              </a>
             </p>
             <p>
-              <i className="fas fa-dove" /> Gołąb pocztowy
+              <i className="fas fa-dove" /> Gołąb pocztowy - Jaruś, reaguje na
+              imię i chleb ze smalcem
             </p>
           </div>
           <div className="footerMenu">
