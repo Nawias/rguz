@@ -55,6 +55,21 @@ a {
 .toggle {
   order: 1;
 }
+.toggle button {
+  color: white;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.toggle button:hover,
+.toggle button:focus {
+  outline: 0;
+  text-decoration: none;
+}
 .item.button {
   order: 2;
 }

@@ -42,9 +42,9 @@ class Header extends Component {
               <Link to="kontakt">KONTAKT</Link>
             </li>
             <li className="toggle">
-              <a href="#" onClick={this.toggleMenu}>
+              <button onClick={this.toggleMenu}>
                 <i className={iconClasses}></i>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
