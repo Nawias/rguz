@@ -15,11 +15,12 @@ class Footer extends Component {
           <div className="contactInfo">
             <h4>KONTAKT</h4>
             <p>
-              <i className="fas fa-map-marker-alt" /> 60-169 Poznań, ul.
-              Gorzelna 17
+              <i className="fas fa-map-marker-alt" /> 60-169 Poznań,
+              ul.&nbsp;Gorzelna&nbsp;17
             </p>
             <p>
-              <i className="fas fa-phone" /> Tel. Kom. +48 534 706 964
+              <i className="fas fa-phone" /> Tel. Kom.
+              +48&nbsp;534&nbsp;706&nbsp;964
             </p>
             <p>
               <i className="fas fa-at" /> gt-rguz@solex.tk
