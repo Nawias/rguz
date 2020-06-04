@@ -1,2 +1,2 @@
-import Cookies from "./Cookies";
-export default Cookies;
+import CookiesComponent from "./Cookies";
+export default CookiesComponent;

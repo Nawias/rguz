@@ -1,11 +1,36 @@
 import React, { Component } from "react";
 import "./Cookies.css";
+import { instanceOf } from "prop-types";
+import { withCookies, Cookies } from "react-cookie";
 
-class Cookies extends Component {
-  state = { closed: false };
+class CookiesComponent extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired,
+  };
+
+  constructor(props) {
+    super(props);
+
+    const { cookies } = props;
+    this.state = { closed: cookies.get("damian") };
+  }
+
+  getClasses() {
+    let classes = "cookiesModal";
+    classes += this.state.closed ? " closed" : "";
+    return classes;
+  }
+
+  onAccept = () => {
+    const { cookies } = this.props;
+    cookies.set("damian", true, { path: "/" });
+    this.setState({ closed: true });
+  };
   render() {
+    let classes = this.getClasses();
     return (
-      <div className="cookiesModal">
+      <div className={classes}>
+        <i className="fas fa-cookie-bite"></i>
         <div className="content">
           <h4>ZBIERAMY CIASTECZKA DLA JARUSIA</h4>
           Piekarnik rozgrzej do temperatury 170 st. C. Miękkie masło, cukier
@@ -17,10 +42,15 @@ class Cookies extends Component {
           kremu ubij na puszystą masę. Smaruj nim ciasteczka i sklejaj je po
           dwa.
         </div>
-        <button className="accept">Akceptuj</button>
+        <div className="buttons">
+          <button className="accept" onClick={this.onAccept}>
+            Akceptuj
+          </button>
+          <button className="accept">Zaintrygowałeś mnie</button>
+        </div>
       </div>
     );
   }
 }
 
-export default Cookies;
+export default withCookies(CookiesComponent);

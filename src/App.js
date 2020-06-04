@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Cookies from "./components/Cookies";
+import CookiesComponent from "./components/Cookies";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,12 +9,15 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { CookiesProvider } from "react-cookie";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Cookies />
+        <CookiesProvider>
+          <CookiesComponent />
+        </CookiesProvider>
         <Header />
         <div className="appBody">
           <Switch>
