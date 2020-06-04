@@ -23,19 +23,19 @@ class Footer extends Component {
             <h4>MENU</h4>
             <ul className="footerMenu">
               <li>
-                <Link to="/">STRONA GŁÓWNA</Link>
+                <Link to="/">Strona Główna</Link>
               </li>
               <li>
-                <Link to="/o-nas">O NAS</Link>
+                <Link to="/o-nas">O nas</Link>
               </li>
               <li>
-                <Link to="uslugi">USŁUGI</Link>
+                <Link to="uslugi">Usługi</Link>
               </li>
               <li>
-                <Link to="/praca">PRACA</Link>
+                <Link to="/praca">Praca</Link>
               </li>
               <li>
-                <Link to="kontakt">KONTAKT</Link>
+                <Link to="kontakt">Kontakt</Link>
               </li>
             </ul>
           </div>
