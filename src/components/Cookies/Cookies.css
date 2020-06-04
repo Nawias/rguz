@@ -1,0 +1,30 @@
+.cookiesModal {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: darkred;
+  padding: 10px 15px;
+}
+
+.cookiesModal button {
+  color: white;
+  font-size: 16px;
+  background-color: #222;
+  cursor: pointer;
+  border: 2px solid gray;
+  display: inline;
+  margin: 2px;
+  padding: 2px 5px;
+}
+.cookiesModal button:hover,
+.cookiesModal button:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+@media all and (min-width: 900px) {
+  .cookiesModal {
+    flex-flow: row nowrap;
+  }
+}

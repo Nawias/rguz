@@ -17,13 +17,13 @@
   text-decoration: none;
 }
 
-.footerMenu ul {
+.footer .footerMenu ul {
   list-style-type: none;
 }
-.footerMenu li {
+.footer .footerMenu li {
   padding: 1px 1px;
 }
-.content {
+.footer .content {
   color: gray;
   display: flex;
   flex-flow: row wrap;
@@ -31,43 +31,44 @@
   align-items: center;
   align-content: space-around;
 }
-.content h4 {
+.footer .content h4 {
   color: lightgray;
 }
-.content div,
-.content p {
+.footer .content div,
+.footer .content p {
   margin: 0 15%;
   padding: 5px 15px;
   width: 100%;
   text-align: center;
 }
-.contactInfo p {
-  text-align: left;
+.footer .contactInfo p {
+  text-align: center;
   padding: 0px 0px !important;
+  margin: 0px 0px;
 }
-.line {
+.footer .line {
   width: 100% !important;
   text-align: center;
 }
-.line hr {
+.footer .line hr {
   margin-left: 5%;
   margin-right: 5%;
   height: 0px;
   border: 2px solid gray;
   border-radius: 5px;
 }
-.devnote {
+.footer .devnote {
   color: lightgray;
   margin-bottom: 10px;
 }
 
 /*Desktop*/
 @media all and (min-width: 900px) {
-  .content {
+  .footer .content {
     flex-wrap: nowrap;
   }
 
-  .content div {
+  .footer .content div {
     margin: 5px 5px;
     flex-basis: 25%;
     align-self: start;
@@ -75,12 +76,15 @@
     width: auto;
     text-align: center;
   }
-  .line {
+  .footer .line {
     width: 100%;
     align-self: center !important;
   }
-  .content p {
+  .footer .content p {
     margin: 5px 5px;
     align-self: flex-end;
+  }
+  .footer .contactInfo p {
+    text-align: left;
   }
 }
