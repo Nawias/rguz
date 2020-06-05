@@ -24,6 +24,9 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
+            <Route exact path="/rguz/">
+              <Home />
+            </Route>
             <Route path="/o-nas">
               <About />
             </Route>
