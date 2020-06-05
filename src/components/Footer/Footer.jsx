@@ -27,7 +27,7 @@ class Footer extends Component {
             </p>
             <p>
               <i className="fab fa-discord" />{" "}
-              <a href="https://discord.gg/VEHDYpQ">
+              <a href="https://discord.gg/VEHDYpQ" target="_blank">
                 https://discord.gg/VEHDYpQ
               </a>
             </p>
