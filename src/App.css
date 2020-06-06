@@ -5,6 +5,7 @@
 }
 
 .appBody {
+  text-align: justify;
   flex-grow: 2;
   align-self: center;
   padding: 20px 20px;
@@ -12,7 +13,7 @@
 
 @media all and (min-width: 600px) {
   .appBody {
-    width: 90%;
+    width: 550px;
   }
 }
 
@@ -22,8 +23,8 @@
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1360px) {
   .appBody {
-    width: 1200px;
+    width: 1280px;
   }
 }
