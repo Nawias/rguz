@@ -3,6 +3,9 @@
   flex-flow: column nowrap;
   height: 100%;
 }
+.appContainer {
+  flex-grow: 2;
+}
 
 .appBody {
   text-align: justify;

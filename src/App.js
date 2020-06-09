@@ -23,26 +23,28 @@ function App() {
           <CookiesComponent />
         </CookiesProvider>
         <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/rguz/">
-            <Home />
-          </Route>
-          <Route path="/o-nas">
-            <About />
-          </Route>
-          <Route path="/uslugi">
-            <Services />
-          </Route>
-          <Route path="/praca">
-            <Work />
-          </Route>
-          <Route path="/kontakt">
-            <Contact />
-          </Route>
-        </Switch>
+        <div className="appContainer">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/rguz/">
+              <Home />
+            </Route>
+            <Route path="/o-nas">
+              <About />
+            </Route>
+            <Route path="/uslugi">
+              <Services />
+            </Route>
+            <Route path="/praca">
+              <Work />
+            </Route>
+            <Route path="/kontakt">
+              <Contact />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </div>
