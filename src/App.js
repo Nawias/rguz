@@ -11,6 +11,10 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CookiesProvider } from "react-cookie";
 
+export function AppBody(props) {
+  return <div className="appBody">{props.children}</div>;
+}
+
 function App() {
   return (
     <div className="App">
@@ -19,28 +23,26 @@ function App() {
           <CookiesComponent />
         </CookiesProvider>
         <Header />
-        <div className="appBody">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/rguz/">
-              <Home />
-            </Route>
-            <Route path="/o-nas">
-              <About />
-            </Route>
-            <Route path="/uslugi">
-              <Services />
-            </Route>
-            <Route path="/praca">
-              <Work />
-            </Route>
-            <Route path="/kontakt">
-              <Contact />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/rguz/">
+            <Home />
+          </Route>
+          <Route path="/o-nas">
+            <About />
+          </Route>
+          <Route path="/uslugi">
+            <Services />
+          </Route>
+          <Route path="/praca">
+            <Work />
+          </Route>
+          <Route path="/kontakt">
+            <Contact />
+          </Route>
+        </Switch>
         <Footer />
       </Router>
     </div>

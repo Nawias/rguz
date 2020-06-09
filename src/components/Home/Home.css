@@ -1,0 +1,8 @@
+.homeComponent {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.homeComponent .jumbotron {
+  width: 100%;
+}
