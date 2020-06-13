@@ -22,7 +22,7 @@ class Header extends Component {
     return (
       <div className="headerComponent">
         <div className="logoImg">
-          <img src="GT-RGuZ.png" alt="LOGO" />
+          <img src="img/GT-RGuZ.png" alt="LOGO" />
         </div>
 
         <nav>

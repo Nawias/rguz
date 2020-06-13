@@ -3,6 +3,125 @@
   flex-flow: column wrap;
 }
 
+/*Jumbotron*/
+
 .homeComponent .jumbotron {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
   width: 100%;
+  height: 600px;
+  background-image: url("/img/jumbotron.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeComponent .jumbotron h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.homeComponent .jumbotron h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.homeComponent .jumbotron h3 {
+  padding: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/*Cards*/
+
+.homeComponent .card {
+  display: flex;
+  flex: 1 0 25%;
+  flex-flow: column nowrap;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222;
+  margin: 1% 1%;
+}
+.homeComponent .card h1 {
+  max-width: 100%;
+  min-width: 100%;
+
+  background-color: #222;
+  color: white;
+}
+.homeComponent .card img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.homeComponent .card .cardbody {
+  flex-grow: 1;
+  font-size: 18px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px 10px;
+  color: black;
+}
+
+/*Horizontal Heading*/
+
+.homeComponent .horizontalHeading {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+.homeComponent .horizontalHeading * {
+  padding: 2px;
+}
+.homeComponent .horizontalHeading a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bolder;
+}
+.homeComponent .horizontalHeading h1 {
+  color: #222;
+  font-size: 42px;
+}
+.homeComponent .horizontalHeading .hbody {
+  font-size: 22px;
+}
+
+/*Join Us*/
+
+.homeComponent .joinus {
+  padding: 40px;
+  color: #444;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+}
+
+/*Partners*/
+
+.homeComponent .partners .imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.homeComponent .partners h2 {
+  color: #666;
+}
+
+.homeComponent .partners .imgs * {
+  padding: 15px;
+  max-width: 96px;
 }
