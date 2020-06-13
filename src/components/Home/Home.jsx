@@ -56,11 +56,11 @@ class Home extends Component {
           <Card title="TRANSPORT" img="img/card-transport.png">
             Rozwozimy towary po całej Europie. Od Uralu po Gibraltar.
           </Card>
-          <Card title="PRACA" img="img/jumbotron.png">
+          <Card title="PRACA" img="img/card-work.png">
             Tworzymy miejsca pracy w krajach Europy, m.in. Polsce, Niemczech i
             Francji.
           </Card>
-          <Card title="WYDARZENIA" img="img/jumbotron.png">
+          <Card title="WYDARZENIA" img="img/card-events.png">
             Bierzemy udział w globalnych przedsięwzięciach i wydarzeniach
             społeczeństwa kierowców ciężarówek.
           </Card>
