@@ -1,0 +1,20 @@
+.cookiesModal .modal {
+  font-size: larger;
+  display: none;
+  color: white;
+  padding: 50px;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(22, 22, 22, 0.75);
+}
+.cookiesModal .modal.visible {
+  display: block;
+}
+
+.cookiesModal .modal img {
+  max-width: 80%;
+}
