@@ -102,4 +102,19 @@
   font-size: 60px;
   font-weight: normal;
   text-align: center;
+  width: 100%;
+}
+/*Partners*/
+.homeComponent .partners .imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.homeComponent .partners h2 {
+  color: #666;
+}
+
+.homeComponent .partners .imgs * {
+  padding: 15px;
+  max-width: 96px;
 }

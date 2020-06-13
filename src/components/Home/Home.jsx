@@ -36,6 +36,17 @@ function HorizontalHeading(props) {
   );
 }
 
+function Partners(props) {
+  const partners = props.partners.map((p) => <img src={p} />);
+
+  return (
+    <div className="partners">
+      <h2>Partnerzy:</h2>
+      <div className="imgs">{partners}</div>
+    </div>
+  );
+}
+
 class Home extends Component {
   render() {
     return (
@@ -61,6 +72,7 @@ class Home extends Component {
           </HorizontalHeading>
 
           <h1 className="joinus">Dołącz do pasjonatów!</h1>
+          <Partners partners={["img/partners/p1.png"]} />
         </AppBody>
       </div>
     );
