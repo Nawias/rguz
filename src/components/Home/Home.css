@@ -23,7 +23,7 @@
 .homeComponent .jumbotron h1 {
   color: white;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 69px;
 }
 
 .homeComponent .jumbotron h2 {
@@ -45,13 +45,18 @@
   display: flex;
   flex: 1 0 25%;
   flex-flow: column nowrap;
+  min-width: 100%;
   text-align: center;
-  min-width: 300px;
-  max-width: 500px;
   justify-content: center;
   align-items: center;
   border: 1px solid #222;
   margin: 1% 1%;
+}
+@media all and (min-width: 400px) {
+  .homeComponent .card {
+    max-width: 500px;
+    min-width: 300px;
+  }
 }
 .homeComponent .card h1 {
   max-width: 100%;
@@ -101,13 +106,15 @@
 /*Join Us*/
 
 .homeComponent .joinus {
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #444;
   font-style: italic;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: normal;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 /*Partners*/
