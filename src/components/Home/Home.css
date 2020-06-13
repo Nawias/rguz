@@ -3,6 +3,8 @@
   flex-flow: column wrap;
 }
 
+/*Jumbotron*/
+
 .homeComponent .jumbotron {
   display: flex;
   justify-content: space-evenly;
@@ -35,4 +37,69 @@
   color: white;
   font-weight: bold;
   font-size: 40px;
+}
+
+/*Cards*/
+
+.homeComponent .card {
+  display: flex;
+  flex: 1 0 25%;
+  flex-flow: column nowrap;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222;
+  margin: 1% 1%;
+}
+.homeComponent .card h1 {
+  max-width: 100%;
+  min-width: 100%;
+
+  background-color: #222;
+  color: white;
+}
+.homeComponent .card img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.homeComponent .card .cardbody {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 5px 5px;
+  color: black;
+}
+
+/*Horizontal Heading*/
+
+.homeComponent .horizontalHeading {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+.homeComponent .horizontalHeading * {
+  padding: 2px;
+}
+.homeComponent .horizontalHeading a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bolder;
+}
+.homeComponent .horizontalHeading h1 {
+  color: #222;
+  font-size: 42px;
+}
+.homeComponent .horizontalHeading .hbody {
+  font-size: 22px;
+}
+.homeComponent .joinus {
+  padding: 40px;
+  color: #444;
+  font-style: italic;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { AppBody } from "../../App";
+import { Link } from "react-router-dom";
 
 function Jumbotron() {
   return (
@@ -16,48 +17,50 @@ function Jumbotron() {
   );
 }
 
+function Card(props) {
+  return (
+    <div className="card">
+      <h1>{props.title}</h1>
+      <img src={props.img} />
+      <div className="cardbody">{props.children}</div>
+    </div>
+  );
+}
+
+function HorizontalHeading(props) {
+  return (
+    <div className="horizontalHeading">
+      <h1>{props.heading}</h1>
+      <div className="hbody">{props.children}</div>
+    </div>
+  );
+}
+
 class Home extends Component {
   render() {
     return (
       <div className="homeComponent">
         <Jumbotron />
         <AppBody>
-          <h1>Homepage</h1> Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Corrupti, facere quis a asperiores ad esse aut minima dolor
-          deleniti. Voluptatum sequi dignissimos animi autem, officia modi quos
-          quasi blanditiis ratione. Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Commodi voluptatum laborum blanditiis non sunt ea
-          impedit facere sapiente obcaecati odio, ex nobis molestias numquam
-          odit aspernatur temporibus inventore rerum quae. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Vel, veritatis illo! Sapiente ullam
-          hic beatae aliquid fuga incidunt facere omnis. Recusandae est, vitae
-          nesciunt sit eius laboriosam architecto pariatur facere. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Ipsa beatae minima odit
-          consequuntur non laudantium saepe soluta eligendi deleniti facilis a,
-          quae voluptas maxime perspiciatis aliquid qui delectus dolorum.
-          Suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-          exercitationem rem, ipsam odio recusandae accusamus? Vero, nam libero.
-          Consequatur sunt possimus quod iste blanditiis dicta nulla at natus
-          officiis repudiandae. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Pariatur nostrum suscipit dolores ipsa totam enim
-          officiis! Numquam, ipsa? Error eos facilis vel totam velit! Voluptatum
-          omnis suscipit hic voluptate earum! Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Ipsum eum itaque voluptatem! Quaerat
-          iusto quae ducimus quibusdam modi molestiae perferendis porro
-          consectetur alias, laboriosam pariatur amet magnam ea, quas fugiat.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed tempore
-          sit dignissimos velit impedit odio error eum, ad commodi iste ipsam
-          ducimus cupiditate totam at neque blanditiis numquam quasi. Cum? Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. A ipsum atque
-          similique? Repudiandae id consectetur natus, cum ullam enim iste
-          nulla, quod eveniet animi accusantium repellendus dolores explicabo
-          dignissimos alias. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Tenetur fugiat, culpa non sapiente praesentium doloribus numquam
-          animi hic facere id saepe quasi quo quia laboriosam iure illum
-          aperiam. Laborum, cumque. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Temporibus optio quisquam veritatis cumque unde
-          distinctio, quo repudiandae! Odio nam fugit voluptatum accusamus
-          eaque, vero accusantium suscipit beatae! Iste, aut necessitatibus!
+          <Card title="TRANSPORT" img="img/card-transport.png">
+            Rozwozimy towary po całej Europie. Od Uralu po Gibraltar.
+          </Card>
+          <Card title="PRACA" img="img/jumbotron.png">
+            Tworzymy miejsca pracy w krajach Europy, m.in. Polsce, Niemczech i
+            Francji.
+          </Card>
+          <Card title="WYDARZENIA" img="img/jumbotron.png">
+            Bierzemy udział w globalnych przedsięwzięciach i wydarzeniach
+            społeczeństwa kierowców ciężarówek.
+          </Card>
+          <HorizontalHeading heading="Potrzebujesz podwózki?">
+            Sprawdź naszą ofertę w zakładce <Link to="/uslugi">Usługi</Link>
+          </HorizontalHeading>
+          <HorizontalHeading heading="Chcesz z nami jeździć?">
+            Złóż swoje CV w zakładce <Link to="/praca">Praca</Link>
+          </HorizontalHeading>
+
+          <h1 className="joinus">Dołącz do pasjonatów!</h1>
         </AppBody>
       </div>
     );

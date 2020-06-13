@@ -8,6 +8,9 @@
 }
 
 .appBody {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   text-align: justify;
   flex-grow: 2;
   align-self: center;
