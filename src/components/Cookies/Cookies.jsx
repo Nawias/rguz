@@ -41,7 +41,6 @@ class CookiesComponent extends Component {
   render() {
     let classes = this.getClasses();
     let recipeClasses = this.getRecipeClasses();
-    console.log(recipeClasses);
     return (
       <div className={classes}>
         <i className="fas fa-cookie-bite"></i>
