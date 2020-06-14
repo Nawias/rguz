@@ -65,7 +65,9 @@ class CookiesComponent extends Component {
           </button>
         </div>
         <Modal className={recipeClasses}>
-          <button onClick={this.closeRecipe}>Zamknij</button>{" "}
+          <button onClick={this.closeRecipe}>
+            <i className="fas fa-times"></i>
+          </button>{" "}
         </Modal>
       </div>
     );
