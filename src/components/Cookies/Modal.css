@@ -1,0 +1,58 @@
+.cookiesModal .modal {
+  display: none;
+  font-size: larger;
+  display: none;
+  color: white;
+  padding: 50px;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  max-height: 100%;
+  background-color: rgba(22, 22, 22, 0.75);
+}
+.cookiesModal .modal.visible {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.cookiesModal .modal .modalBody {
+  display: flex;
+  flex-flow: column;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #444;
+  max-width: 700px;
+}
+
+.cookiesModal .modal .modalBody ul {
+  padding-left: 20px;
+}
+
+.cookiesModal .modal .modalBody img {
+  align-self: center;
+  max-width: 80%;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cookiesModal .modal .modalBody p {
+  font-size: 16px;
+  padding: 5px;
+}
+.cookiesModal .modal .modalBody h4 {
+  padding: 5px;
+}
+.cookiesModal .modal .modalBody button {
+  align-self: flex-end;
+  border: none;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 5px;
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Cookies.css";
 import { instanceOf } from "prop-types";
 import { withCookies, Cookies } from "react-cookie";
+import Modal from "./Modal";
 
 class CookiesComponent extends Component {
   static propTypes = {
@@ -12,7 +13,7 @@ class CookiesComponent extends Component {
     super(props);
 
     const { cookies } = props;
-    this.state = { closed: cookies.get("damian") };
+    this.state = { closed: cookies.get("damian"), recipe: false };
   }
 
   getClasses() {
@@ -20,14 +21,27 @@ class CookiesComponent extends Component {
     classes += this.state.closed ? " closed" : "";
     return classes;
   }
+  getRecipeClasses() {
+    return this.state.recipe ? "visible" : "";
+  }
 
   onAccept = () => {
     const { cookies } = this.props;
     cookies.set("damian", true, { path: "/" });
     this.setState({ closed: true });
   };
+
+  onRecipe = () => {
+    this.setState({ recipe: true });
+  };
+  closeRecipe = () => {
+    this.setState({ recipe: false });
+  };
+
   render() {
     let classes = this.getClasses();
+    let recipeClasses = this.getRecipeClasses();
+    console.log(recipeClasses);
     return (
       <div className={classes}>
         <i className="fas fa-cookie-bite"></i>
@@ -46,8 +60,15 @@ class CookiesComponent extends Component {
           <button className="accept" onClick={this.onAccept}>
             Akceptuj
           </button>
-          <button className="accept">Zaintrygowałeś mnie</button>
+          <button className="accept" onClick={this.onRecipe}>
+            Zaintrygowałeś mnie
+          </button>
         </div>
+        <Modal className={recipeClasses}>
+          <button onClick={this.closeRecipe}>
+            <i className="fas fa-times"></i>
+          </button>{" "}
+        </Modal>
       </div>
     );
   }
