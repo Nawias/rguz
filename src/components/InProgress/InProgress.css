@@ -7,3 +7,15 @@
   align-content: center;
   text-align: center;
 }
+
+.inProgressPage * {
+  padding: 15px 5px;
+}
+
+.inProgressPage h2 {
+  font-size: 50px;
+}
+
+.inProgressPage h5 {
+  font-size: 24px;
+}
