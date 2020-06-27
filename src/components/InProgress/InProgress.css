@@ -6,8 +6,7 @@
   justify-content: center;
   align-content: center;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .inProgressPage * {
@@ -20,4 +19,10 @@
 
 .inProgressPage h5 {
   font-size: 24px;
+}
+
+.inProgressPage img {
+  max-width: 80%;
+  max-height: 400px;
+  padding: 0 !important;
 }
