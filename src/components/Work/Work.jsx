@@ -19,9 +19,9 @@ class Work extends Component {
           autoPlay={5000}
           animationSpeed={750}
         >
-          <img src="img/work/zakre.png" alt="" />
-          <img src="img/work/dariusz.png" alt="" />
-          <img src="img/card-events.png" alt="" />
+          <img src="img/work/zakre.png" alt="zakre" />
+          <img src="img/work/dariusz.png" alt="dariusz" />
+          <img src="img/work/mieszko.png" alt="mieszko" />
         </Carousel>
         <AppBody></AppBody>
       </div>
