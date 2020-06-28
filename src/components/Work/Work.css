@@ -1,0 +1,23 @@
+.workComponent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.BrainhubCarousel__container {
+  padding: 10px;
+  min-width: 200px;
+  max-width: 900px;
+}
+.BrainhubCarousel {
+  padding-bottom: 5px;
+}
+
+.BrainhubCarousel__arrows {
+  background-color: transparent !important;
+}
+.BrainhubCarousel__arrows span {
+  border-color: #222;
+}
+.BrainhubCarousel__arrows:hover:enabled span {
+  border-color: #222;
+}
