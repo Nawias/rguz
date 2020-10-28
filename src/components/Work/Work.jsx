@@ -96,16 +96,26 @@ class Work extends Component {
           <div className="requirements">
             <h2>Wiemy, że posiadasz...</h2>
             <ul>
-              <li>aktualne prawo jazdy C+E, a przede wszystkim kod 95</li>
-              <li>karty kierowcy - bo na tarczki już nie mamy :)</li>
-              <li>świadectwo kwalifikacji zawodowej (masz to w kodzie 95)</li>
               <li>
-                aktualne orzeczenie psychologiczne (to też masz w kodzie 95)
+                Aktualne prawo jazdy C+E, a przede wszystkim{" "}
+                <span className="code95">kod 95</span>
               </li>
-              <li>zaświadczenie lekarskie (to też jest w kodzie 95)</li>
-              <li>chęć i zaangażowanie w pracę (bez pasji ciężko pracować)</li>
+              <li>Karty kierowcy - bo na tarczki już nie mamy :)</li>
+              <li>
+                Świadectwo kwalifikacji zawodowej (masz to w{" "}
+                <span className="code95">kodzie 95</span>)
+              </li>
+              <li>
+                Aktualne orzeczenie psychologiczne (to też masz w{" "}
+                <span className="code95">kodzie 95</span>)
+              </li>
+              <li>
+                Zaświadczenie lekarskie (to też jest w{" "}
+                <span className="code95">kodzie 95</span>)
+              </li>
+              <li>Chęć i zaangażowanie w pracę (bez pasji ciężko pracować)</li>
             </ul>
-            <p>
+            <p style={{ textAlign: "center" }}>
               ...a nawet jeśli nie posiadasz to i tak wszystkiego Cię nauczymy.
             </p>
           </div>
