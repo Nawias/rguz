@@ -41,7 +41,15 @@ h3 a {
   width: 480px;
   max-width: 90%;
   height: 270px;
-  margin: 10px;
+  margin: 10px 5px;
+}
+
+@media all and (min-width: 1360px) {
+  .workComponent .appBody h2.memeAnd {
+    display: inline;
+    width: 160px;
+    margin: auto;
+  }
 }
 .workComponent .meme div {
   z-index: 1;
@@ -66,4 +74,77 @@ h3 a {
   text-align: center;
   max-width: 100%;
   min-width: 100%;
+}
+.workComponent .appBody h2.driver {
+  font-size: xx-large;
+  color: red;
+}
+
+.workComponent .appBody .offer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.workComponent .appBody .offer h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: x-large;
+  font-weight: lighter;
+  color: black;
+}
+
+.workComponent .appBody .offer .offerItems {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100% 80%;
+  margin: 0 10%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.workComponent .appBody .offer .offerItems .offerItem {
+  width: 250px;
+  height: 330px;
+  margin: 10px 30px;
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5%;
+}
+
+.workComponent .appBody .offer .offerItems .offerItem i {
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+  font-size: 4rem;
+  color: brown;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  padding-top: 15px;
+  margin: 10px;
+  text-align: center;
+}
+.workComponent .appBody .offer .offerItems .offerItem p {
+  font-size: larger;
+}
+
+.workComponent .appBody .requirements {
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.workComponent .appBody .requirements h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+
+.workComponent .appBody .requirements ul {
+  margin: 10px;
+  padding: 10px;
 }

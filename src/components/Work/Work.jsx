@@ -18,6 +18,15 @@ function Meme(props) {
   );
 }
 
+function OfferItem(props) {
+  return (
+    <div className="offerItem">
+      <i class={props.iconClass}></i>
+      <p>{props.children}</p>
+    </div>
+  );
+}
+
 class Work extends Component {
   render() {
     return (
@@ -29,7 +38,7 @@ class Work extends Component {
             alt="crash"
             caption="Jeździć po swojemu?"
           ></Meme>
-          <h2>oraz...</h2>
+          <h2 className="memeAnd">oraz...</h2>
           <Meme
             img="/img/work/cash.png"
             alt="cash"
@@ -51,8 +60,58 @@ class Work extends Component {
           <img src="img/work/mieszko.png" alt="mieszko" />
         </Carousel>
         <AppBody>
+          <h2 className="driver"> Kierowca Międzynarodowy C+E </h2>
+          <div className="offer">
+            <h2>U nas dostajesz...</h2>
+            <div className="offerItems">
+              <OfferItem iconClass="fas fa-money-bill-wave fa-fw">
+                Wynagrodzenie zasadniczo jest, ale praktycznie różnie bywa...
+                plus dieta cud do 30KG mniej W MIESIĄC
+              </OfferItem>
+              <OfferItem iconClass="fas fa-stopwatch fa-fw">
+                Elastyczne systemy pracy takie jak: 2/1, 2/2, 3/1, 4/1-4/2, √3,
+                2π, 10<sup>100</sup>...
+              </OfferItem>
+              <OfferItem iconClass="fas fa-ambulance fa-fw">
+                Możliwość objęcia ubezpieczeniem grupowym*{" "}
+                <p style={{ fontSize: "10px", paddingTop: "40%" }}>
+                  *chyba, że mieszkasz w Kraśniku - strefie wolnej od PZU
+                </p>
+              </OfferItem>
+              <OfferItem iconClass="fas fa-bus fa-fw">
+                Ciągniki VOLVO, DAF i SCANIA, w które włożysz wiele pasji (i
+                pieniążków); jeśli nie masz własnej ciężarówki to lepiej szybko
+                na nią zarób ;)
+              </OfferItem>
+              <OfferItem iconClass="fas fa-graduation-cap fa-fw">
+                Jeśli jesteś bez doświadczenia, ale ciężarówki są twoją pasją to
+                zapraszamy do tutoriala w Euro Truck Simulator 2 - pokryjemy
+                koszty szkolenia*{" "}
+                <p style={{ fontSize: "10px", paddingTop: "7%" }}>
+                  *szkolenie jest darmowe
+                </p>
+              </OfferItem>
+            </div>
+          </div>
+          <div className="requirements">
+            <h2>Wiemy, że posiadasz...</h2>
+            <ul>
+              <li>aktualne prawo jazdy C+E, a przede wszystkim kod 95</li>
+              <li>karty kierowcy - bo na tarczki już nie mamy :)</li>
+              <li>świadectwo kwalifikacji zawodowej (masz to w kodzie 95)</li>
+              <li>
+                aktualne orzeczenie psychologiczne (to też masz w kodzie 95)
+              </li>
+              <li>zaświadczenie lekarskie (to też jest w kodzie 95)</li>
+              <li>chęć i zaangażowanie w pracę (bez pasji ciężko pracować)</li>
+            </ul>
+            <p>
+              ...a nawet jeśli nie posiadasz to i tak wszystkiego Cię nauczymy.
+            </p>
+          </div>
           <h3>
-            Napisz do nas w zakładce <Link to="/kontakt">Kontakt</Link>
+            Zaintrygowany? Napisz do nas w zakładce{" "}
+            <Link to="/kontakt">Kontakt</Link>
           </h3>
         </AppBody>
       </div>
