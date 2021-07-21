@@ -20,7 +20,7 @@ class Footer extends Component {
             </p>
             <p>
               <i className="fas fa-phone" /> Tel. Kom.
-              +48&nbsp;534&nbsp;706&nbsp;964
+              +48&nbsp;516&nbsp;617&nbsp;242
             </p>
             <p>
               <i className="fas fa-at" /> biuro.rguz@yandex.com

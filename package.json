@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.0",
     "@material-ui/core": "^4.10.1",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -38,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://www.rguz.gq/"
+  "homepage": "http://www.rguz.tk/"
 }
