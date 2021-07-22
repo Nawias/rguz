@@ -55,7 +55,9 @@ class Footer extends Component {
         <div className="line">
           <hr />
         </div>
-        <p className="devnote">Grupa Transportowa RGuZ @ 2020</p>
+        <p className="devnote">
+          Grupa Transportowa RGuZ @ 2020-{`${new Date().getFullYear()}`}
+        </p>
       </div>
     );
   }
