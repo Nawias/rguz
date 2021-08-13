@@ -10,7 +10,7 @@ function Meme(props) {
     <div
       className="meme"
       style={{
-        "background-image": "url(" + props.img + ")",
+        backgroundImage: "url(" + props.img + ")",
       }}
     >
       <div>{props.caption}</div>
@@ -21,8 +21,8 @@ function Meme(props) {
 function OfferItem(props) {
   return (
     <div className="offerItem">
-      <i class={props.iconClass}></i>
-      <p>{props.children}</p>
+      <i className={props.iconClass}></i>
+      {props.children}
     </div>
   );
 }
@@ -54,6 +54,7 @@ class Work extends Component {
           arrows
           autoPlay={5000}
           animationSpeed={750}
+          itemWidth={900}
         >
           <img src="img/work/zakre.png" alt="zakre" />
           <img src="img/work/dariusz.png" alt="dariusz" />
@@ -65,28 +66,36 @@ class Work extends Component {
             <h2>U nas dostajesz...</h2>
             <div className="offerItems">
               <OfferItem iconClass="fas fa-money-bill-wave fa-fw">
-                Wynagrodzenie zasadniczo jest, ale praktycznie różnie bywa...
-                plus dieta cud do 30KG mniej W MIESIĄC
+                <p>
+                  Wynagrodzenie zasadniczo jest, ale praktycznie różnie bywa...
+                  plus dieta cud do 30KG mniej W MIESIĄC
+                </p>
               </OfferItem>
               <OfferItem iconClass="fas fa-stopwatch fa-fw">
-                Elastyczne systemy pracy takie jak: 2/1, 2/2, 3/1, 4/1-4/2, √3,
-                2π, 10<sup>100</sup>...
+                <p>
+                  Elastyczne systemy pracy takie jak: 2/1, 2/2, 3/1, 4/1-4/2,
+                  √3, 2π, 10<sup>100</sup>...
+                </p>
               </OfferItem>
               <OfferItem iconClass="fas fa-ambulance fa-fw">
-                Możliwość objęcia ubezpieczeniem grupowym*{" "}
+                <p>Możliwość objęcia ubezpieczeniem grupowym*</p>
                 <p style={{ fontSize: "10px", paddingTop: "40%" }}>
                   *chyba, że mieszkasz w Kraśniku - strefie wolnej od PZU
                 </p>
               </OfferItem>
               <OfferItem iconClass="fas fa-bus fa-fw">
-                Ciągniki VOLVO, DAF i SCANIA, w które włożysz wiele pasji (i
-                pieniążków); jeśli nie masz własnej ciężarówki to lepiej szybko
-                na nią zarób ;)
+                <p>
+                  Ciągniki VOLVO, DAF i SCANIA, w które włożysz wiele pasji (i
+                  pieniążków); jeśli nie masz własnej ciężarówki to lepiej
+                  szybko na nią zarób ;)
+                </p>
               </OfferItem>
               <OfferItem iconClass="fas fa-graduation-cap fa-fw">
-                Jeśli jesteś bez doświadczenia, ale ciężarówki są twoją pasją to
-                zapraszamy do tutoriala w Euro Truck Simulator 2 - pokryjemy
-                koszty szkolenia*{" "}
+                <p>
+                  Jeśli jesteś bez doświadczenia, ale ciężarówki są twoją pasją
+                  to zapraszamy do tutoriala w Euro Truck Simulator 2 -
+                  pokryjemy koszty szkolenia*
+                </p>
                 <p style={{ fontSize: "10px", paddingTop: "7%" }}>
                   *szkolenie jest darmowe
                 </p>
