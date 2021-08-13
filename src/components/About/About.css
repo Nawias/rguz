@@ -1,3 +1,212 @@
 .aboutComponent {
   height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.aboutComponent .People {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.aboutComponent .Person {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: brown;
+  height: 160px;
+  width: 100%;
+  margin: 20px;
+  justify-self: flex-start;
+  align-items: center;
+  border-radius: 100px 0 0 100px;
+}
+
+.aboutComponent .Person::before {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  background-color: brown;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  border-width: 80px;
+  box-shadow: 6px 2px 3px rgba(0, 0, 0, 0.2), 6px -2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.aboutComponent .Person.rtl::before {
+  box-shadow: -6px 2px 3px rgba(0, 0, 0, 0.2), -6px -2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.aboutComponent .Person::after {
+  content: "";
+  margin-left: auto;
+  margin-right: 0;
+  border-top: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 80px solid #f1f1f1;
+  border-right: 80px solid #f1f1f1;
+}
+
+.aboutComponent .Person.rtl {
+  flex-flow: row-reverse nowrap;
+  align-self: flex-end;
+  border-radius: 0 100px 100px 0;
+}
+
+.aboutComponent .Person.rtl::after {
+  margin-right: auto;
+  margin-left: 0;
+  border-right: 80px solid transparent;
+  border-left: 80px solid #f1f1f1;
+}
+
+.aboutComponent .Person img {
+  z-index: 3;
+  width: 128px;
+  height: 128px;
+  margin: 16px;
+  border-radius: 80px;
+  background-color: white;
+  border-style: solid;
+  border-color: darkgray;
+  border-width: 16px;
+}
+
+.aboutComponent .Person .Content {
+  z-index: 1;
+  background-color: #f1f1f1;
+  height: 128px;
+  position: relative;
+  width: 100%;
+  padding: 8px;
+}
+
+.aboutComponent .Person.rtl .Content {
+  text-align: end;
+}
+
+.aboutComponent .Person .Content::before {
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  left: -80px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 64px solid #f1f1f1;
+  border-bottom: 64px solid #f1f1f1;
+  border-top: 64px solid #f1f1f1;
+  border-right: 64px solid #f1f1f1;
+}
+
+.aboutComponent .Person.rtl .Content::before {
+  left: auto;
+  right: -80px;
+}
+
+.aboutComponent .Person .Content::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -128px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 64px solid transparent;
+  border-right: 64px solid transparent;
+  border-top: 64px solid #f1f1f1;
+  border-left: 64px solid #f1f1f1;
+  filter: drop-shadow(10px 0 3px rgba(0, 0, 0, 0.2));
+}
+
+.aboutComponent .Person.rtl .Content::after {
+  left: -128px;
+  right: auto;
+  border-left: 64px solid transparent;
+  border-right: 64px solid #f1f1f1;
+  filter: drop-shadow(-10px 0 3px rgba(0, 0, 0, 0.2));
+}
+
+.aboutComponent .Person .Content h2 {
+  color: brown;
+}
+
+@media all and (min-width: 600px) {
+  .aboutComponent .Person {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .aboutComponent .Person {
+    width: 85%;
+    height: 200px;
+  }
+
+  .aboutComponent .Person::before {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-width: 100px;
+  }
+
+  .aboutComponent .Person::after {
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f1f1f1;
+    border-right: 100px solid #f1f1f1;
+  }
+  .aboutComponent .Person.rtl::after {
+    border-right: 100px solid transparent;
+    border-left: 100px solid #f1f1f1;
+  }
+
+  .aboutComponent .Person img {
+    margin: 20px;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    background-color: white;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 16px;
+  }
+  .aboutComponent .Person .Content {
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aboutComponent .Person .Content::before {
+    border-left: 75px solid #f1f1f1;
+    border-bottom: 75px solid #f1f1f1;
+    border-top: 75px solid #f1f1f1;
+    border-right: 75px solid #f1f1f1;
+  }
+
+  .aboutComponent .Person .Content::after {
+    right: -150px;
+    border-bottom: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 75px solid #f1f1f1;
+    border-left: 75px solid #f1f1f1;
+  }
+
+  .aboutComponent .Person.rtl .Content::after {
+    left: -150px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid #f1f1f1;
+  }
+}
+
+@media all and (min-width: 1360px) {
+  .aboutComponent .Person {
+    width: 70%;
+  }
 }
