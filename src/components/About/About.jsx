@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { AppBody } from "../../App";
 import InProgress from "../InProgress";
 import "./About.css";
@@ -25,7 +26,19 @@ class About extends Component {
               description="Niby prezes ale chuja go obchodzi przyszłość firmy. Przynajmniej ma firmowe Seicento."
               img="/img/about/zakre.png"
             />
+            <Person
+              name="Ty!"
+              description={
+                <>
+                  Nasz najbardziej obiecujący pracownik! Sprawdź ofertę
+                  w&nbsp;sekcji&nbsp;<Link to="/praca">Praca</Link>
+                </>
+              }
+              img="/img/about/you.png"
+              rtl
+            />
           </div>
+          <div className="spacer" />
         </AppBody>
       </div>
     );

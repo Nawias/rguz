@@ -23,6 +23,12 @@
   border-radius: 100px 0 0 100px;
 }
 
+.aboutComponent .Person a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+}
+
 .aboutComponent .Person::before {
   display: inline-block;
   position: absolute;
@@ -209,4 +215,10 @@
   .aboutComponent .Person {
     width: 70%;
   }
+}
+
+.aboutComponent .spacer {
+  min-height: 64px;
+  height: auto;
+  width: 100%;
 }
