@@ -14,18 +14,18 @@ class About extends Component {
           <div className="People">
             <Person
               name="Darek"
-              description="Programista C i czasami Java(C)."
+              description="The lass vandalizes with urchin, crush the seychelles until it hobbles."
               img="/img/about/darek.png"
             />
             <Person
               name="Nawias"
-              description="Pisze tą jebaną strone od 2020."
+              description="The lad ransacks with riddle, raid the cook islands until it travels."
               img="/img/about/nawias.png"
               rtl
             />
             <Person
               name="Zakre"
-              description="Niby prezes ale chuja go obchodzi przyszłość firmy. Przynajmniej ma firmowe Seicento."
+              description="Cannibals stutter with amnesty! The ale hauls with halitosis, rob the freighter before it sings."
               img="/img/about/zakre.png"
             />
             <Person
