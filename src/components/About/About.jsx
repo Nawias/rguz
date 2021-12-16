@@ -4,6 +4,7 @@ import { AppBody } from "../../App";
 import InProgress from "../InProgress";
 import "./About.css";
 import Person from "./Components/Person";
+import History from "./Components/History";
 class About extends Component {
   render() {
     return (
@@ -39,6 +40,7 @@ class About extends Component {
             />
           </div>
           <div className="spacer" />
+          <History />
         </AppBody>
       </div>
     );
