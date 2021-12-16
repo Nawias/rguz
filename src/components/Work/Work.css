@@ -21,6 +21,20 @@
 .BrainhubCarousel__arrows:hover:enabled span {
   border-color: #222;
 }
+img.CarouselImage {
+   width: 200px;
+ }
+@media all and (min-width: 600px){
+  img.CarouselImage {
+    width: 500px;
+  }
+}
+@media all and (min-width: 900px){
+  img.CarouselImage {
+    width: 800px;
+  }
+}
+
 h3 a {
   text-decoration: none;
   color: brown;

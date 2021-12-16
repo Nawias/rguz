@@ -55,10 +55,21 @@ class Work extends Component {
           autoPlay={5000}
           animationSpeed={750}
           itemWidth={900}
+          breakpoints={{
+            280:{
+              itemWidth:250
+            },
+            600:{
+              itemWidth: 400
+            },
+            900:{
+              itemWidth: 700
+            },
+          }}
         >
-          <img src="img/work/zakre.png" alt="zakre" />
-          <img src="img/work/dariusz.png" alt="dariusz" />
-          <img src="img/work/mieszko.png" alt="mieszko" />
+          <img src="img/work/zakre.png" alt="zakre" className={'CarouselImage'} />
+          <img src="img/work/dariusz.png" alt="zakre" className={'CarouselImage'} />
+          <img src="img/work/mieszko.png" alt="mieszko" className={'CarouselImage'} />
         </Carousel>
         <AppBody>
           <h2 className="driver"> Kierowca Międzynarodowy C+E </h2>
