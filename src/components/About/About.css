@@ -46,29 +46,34 @@
   box-shadow: -6px 2px 3px rgba(0, 0, 0, 0.2), -6px -2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.aboutComponent .Person::after {
-  content: "";
-  margin-left: auto;
-  margin-right: 0;
-  border-top: 80px solid transparent;
-  border-left: 80px solid transparent;
-  border-bottom: 80px solid #f1f1f1;
-  border-right: 80px solid #f1f1f1;
+@media all and (min-width: 600px) {
+
+  .aboutComponent .Person::after {
+    content: "";
+    margin-left: auto;
+    margin-right: 0;
+    border-top: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 80px solid #f1f1f1;
+    border-right: 80px solid #f1f1f1;
+  }
 }
+
 
 .aboutComponent .Person.rtl {
   flex-flow: row-reverse nowrap;
   align-self: flex-end;
   border-radius: 0 100px 100px 0;
 }
+@media all and (min-width: 600px) {
 
-.aboutComponent .Person.rtl::after {
-  margin-right: auto;
-  margin-left: 0;
-  border-right: 80px solid transparent;
-  border-left: 80px solid #f1f1f1;
+  .aboutComponent .Person.rtl::after {
+    margin-right: auto;
+    margin-left: 0;
+    border-right: 80px solid transparent;
+    border-left: 80px solid #f1f1f1;
+  }
 }
-
 .aboutComponent .Person img {
   z-index: 3;
   width: 128px;
@@ -124,11 +129,19 @@
   top: 0;
   width: 0;
   height: 0;
-  border-bottom: 64px solid transparent;
-  border-right: 64px solid transparent;
-  border-top: 64px solid #f1f1f1;
-  border-left: 64px solid #f1f1f1;
   filter: drop-shadow(10px 0 3px rgba(0, 0, 0, 0.2));
+}
+
+
+@media all and (min-width: 600px){
+
+  .aboutComponent .Person .Content::after {
+    right: -128px;
+    border-bottom: 64px solid transparent;
+    border-right: 64px solid transparent;
+    border-top: 64px solid #f1f1f1;
+    border-left: 64px solid #f1f1f1;
+  }
 }
 
 .aboutComponent .Person.rtl .Content::after {
@@ -161,6 +174,52 @@
   word-spacing: 1px;
 }
 
+.aboutComponent .Colors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.aboutComponent .Colors h2 {
+  font-size: xx-large;
+  text-align: center;
+  flex:3;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+.aboutComponent .Colors .Color {
+  transition: box-shadow 0.2s linear, content 0.2s linear;
+  flex: 1;
+  max-width: 30%;
+  margin: 3px;
+  height: 150px;
+  padding:10px;
+  border-radius: 1px 25px;
+}
+
+.aboutComponent .Colors .Color:hover {
+  box-shadow: inset 0px 0px 40px 40px rgba(0, 0, 0, 0.5);
+}
+.aboutComponent .Colors .Color:after {
+  font-size: small;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  word-spacing: 5px;
+  height: 100%;
+  flex:1;
+  top:0;
+  left:0;
+  content:attr(title);
+  color: #eee;
+}
+.aboutComponent .Colors .Color:hover:after{
+  content:attr(desc);
+}
 
 @media all and (min-width: 600px) {
   .aboutComponent .Person {
