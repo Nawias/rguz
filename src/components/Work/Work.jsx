@@ -68,7 +68,6 @@ class Work extends Component {
           }}
         >
           <img src="img/work/zakre.png" alt="zakre" className={'CarouselImage'} />
-          <img src="img/work/dariusz.png" alt="zakre" className={'CarouselImage'} />
           <img src="img/work/mieszko.png" alt="mieszko" className={'CarouselImage'} />
         </Carousel>
         <AppBody>
