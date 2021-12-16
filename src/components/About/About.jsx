@@ -44,6 +44,7 @@ class About extends Component {
           <History />
           <div className="spacer" />
           <Colors />
+          <div className="spacer" />
         </AppBody>
       </div>
     );

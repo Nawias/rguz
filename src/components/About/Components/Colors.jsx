@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Color = ({color, title, desc}) => (<div className="Color" title={title} desc={desc} style={{backgroundColor: color ? color : 'black'}}/>);
+const Color = ({color, title, desc}) => (<div className="Color" color-title={title} desc={desc} style={{backgroundColor: color ? color : 'black'}}/>);
 
 const Colors = (props) => {
   return (
