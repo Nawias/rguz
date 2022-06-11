@@ -41,7 +41,6 @@ class Footer extends Component {
             <ul>
               <NavLink to="/" value="Strona Główna" />
               <NavLink to="/o-nas" value="O Nas" />
-              <NavLink to="/uslugi" value="Usługi" />
               <NavLink to="/praca" value="Praca" />
               <NavLink to="/kontakt" value="Kontakt" />
             </ul>

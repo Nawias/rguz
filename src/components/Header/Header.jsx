@@ -29,7 +29,6 @@ class Header extends Component {
           <ul className="menu">
             <NavLink className={itemClasses} to="/" value="STRONA GŁÓWNA" />
             <NavLink className={itemClasses} to="/o-nas" value="O NAS" />
-            <NavLink className={itemClasses} to="/uslugi" value="USŁUGI" />
             <NavLink className={itemClasses} to="/praca" value="PRACA" />
             <NavLink className={itemClasses} to="/kontakt" value="KONTAKT" />
             <li className="toggle">

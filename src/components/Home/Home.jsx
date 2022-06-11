@@ -65,7 +65,7 @@ class Home extends Component {
             społeczeństwa kierowców ciężarówek.
           </Card>
           <HorizontalHeading heading="Potrzebujesz podwózki?">
-            Sprawdź naszą ofertę w zakładce <Link to="/uslugi">Usługi</Link>
+            Skontaktuj się z nami w zakładce <Link to="/kontakt">Kontakt</Link>
           </HorizontalHeading>
           <HorizontalHeading heading="Chcesz z nami jeździć?">
             Złóż swoje CV w zakładce <Link to="/praca">Praca</Link>
